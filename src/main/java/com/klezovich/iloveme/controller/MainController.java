@@ -6,10 +6,7 @@ import com.klezovich.iloveme.repository.QualityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 import java.util.Objects;
@@ -45,6 +42,12 @@ public class MainController {
                 .user(principal.getName())
                 .build()
         );
+        return "redirect:/";
+    }
+
+    @GetMapping("/delete")
+    public String add(@RequestParam("id") Long id) {
+        repository.deleteById(id);
         return "redirect:/";
     }
 }
