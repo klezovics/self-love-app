@@ -1,0 +1,18 @@
+1. Navbar
+  1.1 Change to flexbox
+  1.2 Make link to Homepage work
+  1.3 Make link to Logout work
+  1.4 Add user greeting to navbar
+
+2. Main
+  1.1. Add button to delete
+  1.2. Add button to edit
+  1.3. Allow to reorder
+  1.4. Allow to add to category
+
+3. Users
+ 3.1 Move to DB
+
+
+4. Deployment
+ 4.1 Deploy to heroku

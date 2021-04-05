@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/assets.html :: assets"></th:block>
+</head>
+
+<body>
+<div th:replace="fragments/header.html :: header"></div>
+
+<h1>Good quality website</h1>
+<p>Hello, <span th:text="${username}">user</span></p>
+<p>Good quality list:</p>
+<ol>
+    <li th:each="quality : ${qualities}" th:text="${quality.text}">Some quality</li>
+</ol>
+
+<form action="#" method="post" th:action="@{/add}" th:object="${new_quality}">
+    <p>New quality: <input type="text" th:field="*{text}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+<div th:replace="fragments/footer.html :: footer"></div>
+</body>
+</html>
