@@ -20,6 +20,7 @@
   4.2 Make quality list look nice
   4.3 Allow to reorder properties by dragging them
   4.4 Allow user to add an icon
+  4.5 Come up with a way to make necessary items active
 
 4. Deployment
  4.1 Deploy to heroku
