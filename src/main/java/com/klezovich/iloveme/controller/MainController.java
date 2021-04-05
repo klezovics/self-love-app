@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.security.Principal;
+import java.util.Objects;
 
 @RequestMapping("/")
 @Controller
@@ -28,7 +29,12 @@ public class MainController {
     public String show(Model m, Principal principal) {
         m.addAttribute("qualities", repository.findAll());
         m.addAttribute("new_quality", new AddQualityDto());
-        m.addAttribute("username", principal.getName());
+
+        if(Objects.isNull(principal)) {
+            m.addAttribute("username", "NoNameFakePrincipal");
+        }else {
+            m.addAttribute("username", principal.getName());
+        }
         return "quality_list";
     }
 
