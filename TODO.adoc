@@ -9,10 +9,17 @@
   1.2. Add button to edit
   1.3. Allow to reorder
   1.4. Allow to add to category
+  1.5  Add form validation - prevent duplicates
 
 3. Users
  3.1 Move to DB
 
+4. GUI - just make it look nice
+  4.0 Add a nice big heart, which becomes bigger on hover
+  4.1 Include bootstrap
+  4.2 Make quality list look nice
+  4.3 Allow to reorder properties by dragging them
+  4.4 Allow user to add an icon
 
 4. Deployment
  4.1 Deploy to heroku
