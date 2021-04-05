@@ -8,9 +8,9 @@
 <div th:replace="fragments/header.html :: header"></div>
 
 <div class="container">
-    <h1>Good quality website</h1>
+    <h1>Why am I so awesome ?</h1>
     <p>Hello, <span th:text="${username}">user</span></p>
-    <p>Good quality list:</p>
+    <p>Here's your good quality list:</p>
     <ol>
         <li th:each="quality : ${qualities}" th:text="${quality.text}">Some quality</li>
     </ol>
