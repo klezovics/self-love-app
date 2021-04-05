@@ -15,7 +15,7 @@
 </ol>
 
 <form action="#" method="post" th:action="@{/add}" th:object="${new_quality}">
-    <p>New quality: <input type="text" th:field="*{text}" /></p>
+    <p>New quality: <input type="text" th:field="*{text}" required="required"/></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
 
